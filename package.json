@@ -18,10 +18,20 @@
     "mcp",
     "image-generation",
     "z-ai",
-    "glm-image"
+    "glm-image",
+    "claude",
+    "ai"
   ],
-  "author": "",
+  "author": "ex-takashima",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ex-takashima/glm-image-mcp-server.git"
+  },
+  "homepage": "https://github.com/ex-takashima/glm-image-mcp-server#readme",
+  "bugs": {
+    "url": "https://github.com/ex-takashima/glm-image-mcp-server/issues"
+  },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.17.0",
     "axios": "^1.6.0",
