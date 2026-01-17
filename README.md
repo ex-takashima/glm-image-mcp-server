@@ -1,10 +1,11 @@
 # glm-image-mcp-server
 
+[![npm version](https://img.shields.io/npm/v/@dondonudonjp/glm-image-mcp-server.svg)](https://www.npmjs.com/package/@dondonudonjp/glm-image-mcp-server)
+[![npm downloads](https://img.shields.io/npm/dm/@dondonudonjp/glm-image-mcp-server.svg)](https://www.npmjs.com/package/@dondonudonjp/glm-image-mcp-server)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg)](https://nodejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue.svg)](https://www.typescriptlang.org/)
 [![MCP](https://img.shields.io/badge/MCP-Compatible-8A2BE2.svg)](https://modelcontextprotocol.io/)
-[![GitHub Package](https://img.shields.io/badge/GitHub%20Package-@ex--takashima%2Fglm--image--mcp--server-blue.svg)](https://github.com/ex-takashima/glm-image-mcp-server/packages)
 
 Z.AI の glm-image モデルを使用した画像生成 MCP サーバー
 
@@ -16,7 +17,17 @@ Z.AI の glm-image モデルを使用した画像生成 MCP サーバー
 
 ## インストール
 
+### npm からインストール
+
 ```bash
+npm install @dondonudonjp/glm-image-mcp-server
+```
+
+### ソースからビルド
+
+```bash
+git clone https://github.com/ex-takashima/glm-image-mcp-server.git
+cd glm-image-mcp-server
 npm install
 npm run build
 ```
@@ -43,6 +54,21 @@ cp .env.example .env
 
 Claude Desktop の設定ファイル（`claude_desktop_config.json`）に以下を追加：
 
+```json
+{
+  "mcpServers": {
+    "glm-image": {
+      "command": "npx",
+      "args": ["@dondonudonjp/glm-image-mcp-server"],
+      "env": {
+        "Z_AI_API_KEY": "your_api_key"
+      }
+    }
+  }
+}
+```
+
+**ローカルビルドの場合：**
 ```json
 {
   "mcpServers": {
@@ -74,10 +100,13 @@ Claude Desktop の設定ファイル（`claude_desktop_config.json`）に以下�
 
 ```bash
 # バッチ処理を実行
-npx glm-image-batch config.json
+npx @dondonudonjp/glm-image-mcp-server/dist/cli.js config.json
+
+# または glm-image-batch コマンド（グローバルインストール時）
+glm-image-batch config.json
 
 # JSON 形式で出力
-npx glm-image-batch config.json --format json
+glm-image-batch config.json --format json
 ```
 
 #### バッチ設定ファイルの形式

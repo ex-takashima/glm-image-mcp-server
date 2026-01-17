@@ -1,6 +1,6 @@
 {
-  "name": "@ex-takashima/glm-image-mcp-server",
-  "version": "1.0.0",
+  "name": "@dondonudonjp/glm-image-mcp-server",
+  "version": "1.0.1",
   "description": "MCP server for Z.AI glm-image model image generation",
   "type": "module",
   "main": "dist/index.js",
@@ -44,8 +44,5 @@
   },
   "engines": {
     "node": ">=18.0.0"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
   }
 }
