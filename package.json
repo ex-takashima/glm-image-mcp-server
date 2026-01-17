@@ -1,0 +1,38 @@
+{
+  "name": "glm-image-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for Z.AI glm-image model image generation",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "glm-image-mcp": "./dist/index.js",
+    "glm-image-batch": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "batch": "node dist/cli.js",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "mcp",
+    "image-generation",
+    "z-ai",
+    "glm-image"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.0",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
