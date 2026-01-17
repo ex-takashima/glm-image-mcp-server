@@ -8,6 +8,9 @@ dist/
 .env
 .env.local
 
+# npm config (contains auth token)
+.npmrc
+
 # Claude Code settings
 .claude/settings.local.json
 

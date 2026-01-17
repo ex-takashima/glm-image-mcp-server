@@ -4,8 +4,7 @@
 [![Node.js](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg)](https://nodejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue.svg)](https://www.typescriptlang.org/)
 [![MCP](https://img.shields.io/badge/MCP-Compatible-8A2BE2.svg)](https://modelcontextprotocol.io/)
-[![npm version](https://img.shields.io/npm/v/glm-image-mcp-server.svg)](https://www.npmjs.com/package/glm-image-mcp-server)
-[![npm downloads](https://img.shields.io/npm/dm/glm-image-mcp-server.svg)](https://www.npmjs.com/package/glm-image-mcp-server)
+[![GitHub Package](https://img.shields.io/badge/GitHub%20Package-@ex--takashima%2Fglm--image--mcp--server-blue.svg)](https://github.com/ex-takashima/glm-image-mcp-server/packages)
 
 Z.AI の glm-image モデルを使用した画像生成 MCP サーバー
 
